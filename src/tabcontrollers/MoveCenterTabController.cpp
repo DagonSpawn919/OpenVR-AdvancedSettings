@@ -2340,7 +2340,7 @@ void MoveCenterTabController::updateHandTurn(
             double handYawDiff = quaternion::getYaw( handDiffQuaternion );
 
             int newRotationAngleDeg = static_cast<int>(
-                round( handYawDiff * k_radiansToCentidegrees ) + m_rotation );
+                round( -1 * handYawDiff * k_radiansToCentidegrees ) + m_rotation );
 
             // Keep angle within -18000 ~ 18000 centidegrees
             if ( newRotationAngleDeg > 18000 )
