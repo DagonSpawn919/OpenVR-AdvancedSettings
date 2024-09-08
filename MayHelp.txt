@@ -1,0 +1,73 @@
+What worked for me (used Windows 11). I'm not particularly knowledgeable, so take this all with a grain of salt.:
+
+	Environmental variables setup I used:
+
+BUILD_PACKAGE = C:\Users\"User"\Desktop\ -location shouldn't matter. Files are built to file you build from. This is for standalone zip if you want that.
+
+BUILD_VSPROJ = C:\Users\"User"\Desktop\ -location shouldn't matter. Files are built to file you build from.
+
+JOM_LOC = C:\Qt\Qt5.14.2\Tools\QtCreator\bin\jom.exe -jom.exe location
+
+LLVM_LOC = C:\Program Files\LLMV\bin\ -path to LLVM bin with clang-format.exe
+
+NSIS_LOC = C:\Program Files (x86)\NSIS\ -path to installation of NSIS with the makensis file
+
+PYTHON_LOC = C:\Users\"User"\AppData\Local\Programs\Python\Python312\ -path to python used
+
+C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE
+
+QT_LOC = C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\bin -path to Qt bin for msvc2017
+
+VS_LOC = C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvarsall.bat -path to VS vcvarsall.bat
+
+	Environmental variables I added to Path (not sure which are necessary - I tried a lot of things):
+
+C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE -to be honest, I can't remember what issue I did this to try to correct, but I kept it.  Unsure if necessary.
+
+C:\Users\"User"\AppData\Local\Programs\Python\Python312\ -python location
+
+C:\Program Files (x86)\NSIS\ -NSIS location
+
+C:\Qt\Qt5.14.2\Tools\mingw730_64\bin -added this at one point when I had errors related to g++. Unsure if this is necessary, but I kept it.
+
+C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\bin -path to Qt bin for msvc2017
+
+C:\Program Files\CMake\bin -path to cmake exe files
+
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvarsall.bat -path to VS vcvarsall.bat
+
+C:\Qt\Qt5.14.2\Tools\QtCreator\bin\jom.exe -jom.exe location
+
+	How I built/compiled:
+
+Extracted zip file.
+
+Ran build_windows.cmd in windows powershell (RAN POWERSHELL AS ADMIN).
+
+When done, closed powershell.
+
+Opened AdvancedSettings.vcxproj with VS. Updated Windows SDK version to 10.00 and Platform Toolset to v143 on pop-up. Hit okay.
+
+Build>Batch Build -select release, and debug if you want that also, then select build
+
+
+zip standalone is in \OpenVR-AdvancedSettings-master\bin\win64
+
+exe is in D:\Downloads\1\OpenVR-AdvancedSettings-master\bin\win64\AdvancedSettings
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
