@@ -53,7 +53,7 @@ Build>Batch Build -select release, and debug if you want that also, then select 
 
 zip standalone is in \OpenVR-AdvancedSettings-master\bin\win64
 
-exe is in D:\Downloads\1\OpenVR-AdvancedSettings-master\bin\win64\AdvancedSettings
+exe is in \OpenVR-AdvancedSettings-master\bin\win64\AdvancedSettings
 
 
 
