@@ -14,8 +14,6 @@ NSIS_LOC = C:\Program Files (x86)\NSIS\ -path to installation of NSIS with the m
 
 PYTHON_LOC = C:\Users\"User"\AppData\Local\Programs\Python\Python312\ -path to python used
 
-C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE
-
 QT_LOC = C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\bin -path to Qt bin for msvc2017
 
 VS_LOC = C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvarsall.bat -path to VS vcvarsall.bat
